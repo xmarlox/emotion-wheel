@@ -1,0 +1,139 @@
+body {
+  font-family: Lato, Helvetica, sans-serif, serif;
+  font-size: 14px;
+  color: #333;
+}
+.hole {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 0.5px solid #333;
+  background: #fff;
+  z-index: 4;
+}
+.hole .label {
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+.donut {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 0.5px solid #333;
+  z-index: 3;
+}
+#level1.donut {
+  width: 275px;
+  height: 275px;
+  top: 195.5px;
+  left: 195.5px;
+  background: conic-gradient(
+    rgba(255, 0, 0, 0.6) 0deg 51deg,
+    #333 51deg 51.25deg,
+    rgba(255,165,0, 0.6) 51.25deg 102.25deg,
+    #333 102.25deg 102.5deg,
+    rgba(255, 255, 0, 0.6) 102.5deg 153.5deg,
+    #333 153.5deg 153.75deg,
+    rgba(0, 128, 0, 0.6) 153.75deg 204.75deg,
+    #333 204.75deg 205deg,
+    rgba(0, 0, 255, 0.6) 205deg 256deg,
+    #333 256deg 256.25deg,
+    rgba(75, 0, 130, 0.6) 256.25deg 307.25deg,
+    #333 307.25deg 307.5deg,
+    rgba(148, 0, 211, 0.6) 307.5deg 359.75deg,
+    #333 359.75deg 360deg
+  );
+}
+#level2.donut {
+  width: 450px;
+  height: 450px;
+  top: 108px;
+  left: 108px;
+  z-index: 2;
+  background: conic-gradient(
+    rgba(255, 0, 0, 0.4) 0deg 51deg,
+    #333 51deg 51.25deg,
+    rgba(255,165,0, 0.4) 51.25deg 102.25deg,
+    #333 102.25deg 102.5deg,
+    rgba(255, 255, 0, 0.4) 102.5deg 153.5deg,
+    #333 153.5deg 153.75deg,
+    rgba(0, 128, 0, 0.4) 153.75deg 204.75deg,
+    #333 204.75deg 205deg,
+    rgba(0, 0, 255, 0.4) 205deg 256deg,
+    #333 256deg 256.25deg,
+    rgba(75, 0, 130, 0.4) 256.25deg 307.25deg,
+    #333 307.25deg 307.5deg,
+    rgba(148, 0, 211, 0.4) 307.5deg 359.75deg,
+    #333 359.75deg 360deg
+  );
+}
+#level3.donut {
+  width: 650px;
+  height: 650px;
+  z-index: 1;
+  background: conic-gradient(
+    rgba(255, 0, 0, 0.2) 0deg 51deg,
+    #333 51deg 51.25deg,
+    rgba(255,165,0, 0.2) 51.25deg 102.25deg,
+    #333 102.25deg 102.5deg,
+    rgba(255, 255, 0, 0.2) 102.5deg 153.5deg,
+    #333 153.5deg 153.75deg,
+    rgba(0, 128, 0, 0.2) 153.75deg 204.75deg,
+    #333 204.75deg 205deg,
+    rgba(0, 0, 255, 0.2) 205deg 256deg,
+    #333 256deg 256.25deg,
+    rgba(75, 0, 130, 0.2) 256.25deg 307.25deg,
+    #333 307.25deg 307.5deg,
+    rgba(148, 0, 211, 0.2) 307.5deg 359.75deg,
+    #333 359.75deg 360deg
+  );
+}
+.donut .labels .item {
+  position: absolute;
+  z-index: 20;
+  transform-origin: 0 0;
+  width: 150px;
+}
+.donut .labels .item label {
+  text-transform: capitalize;
+  width: 100%;
+}
+/* #level2.donut .labels .item, #level3.donut .labels .item {
+  border-bottom: 0.5px solid #333;
+}
+#level2.donut .labels .item:last-child, #level3.donut .labels .item:last-child {
+  border-bottom: none;
+} */
+.donut .labels {
+  position: relative;
+  border-radius: 50%;
+  z-index: 20;
+}
+#level1.donut .labels {
+  top: -18px;
+  transform: rotate(-114deg);
+}
+#level1.donut .labels .item label {
+  padding: 45px;
+}
+#level2.donut .labels {
+  top: -115px;
+  transform: rotate(-94deg);
+}
+#level2.donut .labels .item label {
+  padding: 28px;
+}
+#level3.donut .labels {
+  top: -209px;
+  left: -3px;
+  transform: rotate(-93deg);
+}
+#level3.donut .labels .item label {
+  padding: 22px;
+}
